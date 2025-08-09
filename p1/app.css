@@ -1,0 +1,159 @@
+
+/* font-family: "Bitter", serif; */
+/* font-family: "Mukta", sans-serif; */
+body {
+    font-family: "Mukta", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bitter", serif;   
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 400; 
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-size: 38px;
+    letter-spacing: 0;
+}
+
+h4 {
+    font-size: 30px;
+    letter-spacing: 0.25px;
+}
+
+h5 {
+    font-size: 24px;
+    letter-spacing: 0.25px;
+}
+
+h6 {
+    font-size: 20px;
+    letter-spacing: 0.25px;
+}
+
+code  {
+    color: #CB5E52;
+    font-weight: bold;
+}
+header {
+    height: 100vh;
+    background-color: #863ad8;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1,
+header p {
+    width: 75%;
+    max-width: 900px;
+    margin: 16px 0;
+}
+
+header hr {
+    width: 50%;
+    margin: 32px;
+}
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 32px;
+}
+
+.content h3 {
+    text-transform: capitalize;
+}
+
+.info {
+    text-align: center;
+    font-family: "Bitter", serif;   
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.info span {
+    color: #e95400;
+}
+
+
+.headline {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 40px 0 0 0;
+    line-height: 30px;
+}
+
+#first {
+    border-bottom: 2px solid #D1D5DC;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 14px;
+    border-left: 2px solid #CB5E52;
+    padding-left: 16px;
+    margin: 32px 0 32px 32px;
+}
+
+.quote cite {
+    display: block;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #863ad8;
+}
+
+footer ul {
+    list-style: none;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 28px 0;
+}
+footer ul li{
+    display: inline;
+    height: 55px;
+    padding: 0 16px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
