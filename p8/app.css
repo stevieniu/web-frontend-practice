@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.btn {
+    padding: 20px 40px;
+    border: 2px solid #e91e63;
+    border-radius: 25px;
+    color: #e91e63;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #e91e63; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}
+
+.spinner {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(cyan, yellow, magenta, cyan);
+    border: 4px solid white;
+    box-shadow: inset 0px 0px 110px -70px black;
+    position: relative;
+    animation: spin 1.5s linear infinite;
+
+}
+
+.spinner::after {
+    content: "";
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }   
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.toggle {
+    opacity: 0;
+}
+
+.toggle + label {
+    position: relative;
+    padding-left: 5rem; 
+}
+
+.toggle + label::before {
+    content: "";
+    background-color: #c6d0cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    transition: background-color 0.2s;
+}
+
+.toggle + label::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    transition: transform 0.2s;
+}
+
+.toggle:checked + label::before {
+    background-color: #20b776;
+}
+
+.toggle:checked + label::after {
+    transform: translateX(2rem);
+}
